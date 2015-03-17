@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Environmental Toxicants and Related Diseases | Canadian Environmental Health Atlas</title>  
+		<link rel="stylesheet" type="text/css" href="css/chosen.css" />	
+		<link rel="stylesheet" type="text/css" href="css/style.css" />	
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+			
+			<div id="header">
+				<div class="inner">
+					<img src="img/whitelogo.png"/>
+					<a href="/" title="Canadian Environmental Health Atlas">
+						<h2>Canadian Environmental Health Atlas</h2>
+						<p>Understanding Our Environment is Key to Promoting Health and Preventing Disease</p>
+					</a>
+				</div>
+			</div><!-- #header -->
+			
+			<div id="content">
+				<div class="zoom_container">
+					
+				</div>
+				<div class="aside">
+					<div class="blocks block1">
+						<h3>Environmental Toxicants and Related Diseases</h3>
+						<select class="chosen" name="category" id="category" data-placeholder="Browse by Category..."></select>
+						<select class="chosen" name="disease" id="disease" data-placeholder="Browse by Disease..."></select>
+						<select class="chosen" name="toxin" id="toxin" data-placeholder="Browse by Toxicant..."></select>
+					</div>
+					<div class="blocks block2"></div> <!--Map -->
+				</div>
+				<div class="clear"></div>
+			</div><!-- #content -->
+			
+			<div id="footer">
+				<div class="inner">
+					<a href="http://www.sshrc-crsh.gc.ca/" target="_blank"><img class="footer-img-link one" src="img/flag.png"></a> 
+					<a href="http://www.cihr-irsc.gc.ca/" target="_blank"><img class="footer-img-link two" src="img/leaf.png"></a>
+				</div>
+			</div><!-- #footer -->
+			
+		</div><!-- #wrapper -->
+		<script src="js/jquery.js"></script>
+		<script src="js/chosen.jquery.min.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script src="js/tree.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="http://pollutantapi-aaroncheng.rhcloud.com/category/index" id="check" type="application/json"></script>
+	</body>
+
+</html>
