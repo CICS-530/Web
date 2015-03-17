@@ -1,0 +1,141 @@
+/**
+ * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
+ * 
+ * Original Tutorial: http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
+ * License: Free - do whatever you like with it! Credit and linkbacks much appreciated.
+ *
+ * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
+ */
+html,body,h2,h3,p{margin:0;padding:0;}
+html,
+body {
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+	margin:auto;
+}
+#header {
+	padding:10px;
+	height:100px;
+	background-image:url('../img/header.jpg');
+	/* background: rgb(183,222,237); 
+	background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(183,222,237,1)), color-stop(50%,rgba(113,206,239,1)), color-stop(51%,rgba(33,180,226,1)), color-stop(100%,rgba(183,222,237,1))); 
+	background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+	background: -o-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+	background: -ms-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 );  */
+
+}
+#header .inner > * { float:left }
+#header .inner { 
+	width:1100px; 
+	margin:auto; 
+	font-family:'sans-serif'
+}
+#header .inner h2 { margin:5px; font-size:40px; }
+#header .inner p { margin:5px; }
+#header .inner a { text-decoration:none; color:#fff; }
+#content {
+	width:1100px;
+	margin:auto;
+}
+.zoom_container {
+	margin:25px 0px 100px 0px;
+	width:650px;
+	height:500px;
+	float:left;
+	background-color:#4C5B58
+}
+.aside { margin:25px 0px 0px 0px;float:left; }
+.aside .blocks {  
+	width:426px;
+	height:250px;
+}
+.aside .block1 { 
+	background-color:#D1D8B9;
+	color:darkorchid;
+}
+.aside .block1 h3 {
+	padding:25px 0px;
+	text-align:center;
+	font-family:'Arial';
+	width:325px;
+	margin:auto;
+}
+.aside .block1 select {
+	margin-top:40px;
+	width:300px;
+}
+.aside .block1 .chosen-container {
+	margin:10px 60px;
+	width:300px;
+	
+}
+.aside .block2 {
+	background-image:url('../img/map.jpg');
+	background-size:cover;
+}
+.clear { clear:both; }
+.chosen-container-single .chosen-default {
+  color: #666;
+}
+#footer {
+	background-image:url('../img/header.jpg');
+	width:100%;
+	height:70px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#footer .inner {
+	text-align:center;
+	margin:10px;
+}
+
+.chosen-container { text-transform:capitalize; }
+
+
+.node {
+    cursor: pointer;
+  }
+
+  .overlay{
+      /* background-color:#EEE; */
+  }
+   
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+   
+  .node text {
+    font-size:10px; 
+    font-family:sans-serif;
+	fill:#eee;
+	transform:rotate(30 20,40)
+  }
+   
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
