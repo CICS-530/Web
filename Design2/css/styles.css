@@ -1,0 +1,32 @@
+	html,body,h2,h3,p{margin:0;padding:0;}
+	#header 
+	{	
+    color:white;
+    text-align:center;
+    padding:5px;
+	}
+	#header .inner > * { float:left }
+	
+	#design 
+	{
+    width:1350px;
+	height:560px;    
+    padding:10px;	 
+	
+		
+	}
+	
+	#footer 
+	{
+	color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 
+	
+	}
+	#header, #footer {
+		
+        float:left;
+		padding:15px 0;
+		min-width:100%;
+	}
